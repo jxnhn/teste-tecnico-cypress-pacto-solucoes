@@ -88,7 +88,7 @@ cypress-pacto-solucoes/
   2. Realiza uma busca por "Pacto Soluções".
   3. Valida se o primeiro resultado contém o texto "Pacto" e se o link corresponde ao domínio oficial da empresa.
 
-  ## Decisões Técnicas 
+## Decisões Técnicas 
 
 Os asserts são fundamentados no atributo href do primeiro snippet de resultado, por ser mais robusto. Como os snippets podem sofrer alterações dinâmicas pelo motor de busca, o teste valida apenas parte do texto do link ("Pacto") para evitar falsos negativos. Assim, o teste garante que o primeiro resultado é relevante e aponta para o site correto, sem depender de alterações na formatação do snippet.
 

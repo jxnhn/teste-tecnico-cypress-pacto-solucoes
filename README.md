@@ -12,7 +12,7 @@ Projeto de automação de testes end-to-end utilizando [Cypress](https://www.cyp
 - [Como Executar os Testes](#como-executar-os-testes)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Detalhes do Teste](#detalhes-do-teste)
-- [Decisões Técnicas]("decisoes-tecnicas)
+- [Decisões Técnicas]("#decisoes-tecnicas)
 - [Referências](#referências)
 
 ---

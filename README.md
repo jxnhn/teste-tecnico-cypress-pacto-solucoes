@@ -86,7 +86,7 @@ cypress-pacto-solucoes/
 - **Fluxo testado:**  
   1. Acessa a página inicial do Yahoo.
   2. Realiza uma busca por "Pacto Soluções".
-  3. Valida se o primeiro resultado contém o texto "Pacto" e se o link corresponde ao domínio oficial da empresa.
+  3. Busca nos snippets todos os resultados que contêm uma âncora para o site da empresa.
 
 ---
 

@@ -1,6 +1,6 @@
 # Cypress Pacto Soluções
 
-Projeto de automação de testes end-to-end utilizando [Cypress](https://www.cypress.io/) para validar buscas relacionadas à empresa Pacto Soluções, como solicitado no teste técnico da empresa.
+Projeto de automação de testes end-to-end utilizando [Cypress](https://www.cypress.io/) para validar buscas relacionadas à empresa Pacto Soluções, conforme solicitado em teste técnico.
 
 ---
 
@@ -19,7 +19,7 @@ Projeto de automação de testes end-to-end utilizando [Cypress](https://www.cyp
 
 ## Sobre o Projeto
 
-Este projeto tem como objetivo automatizar o teste de busca pelo termo "Pacto Soluções" no Yahoo, validando se o site oficial da empresa aparece corretamente como o primeiro nos resultados.
+Este projeto automatiza a validação da busca pelo termo "Pacto Soluções" no Yahoo, garantindo que o site oficial da empresa apareça corretamente nos resultados.
 
 ---
 
@@ -88,10 +88,13 @@ cypress-pacto-solucoes/
   2. Realiza uma busca por "Pacto Soluções".
   3. Valida se o primeiro resultado contém o texto "Pacto" e se o link corresponde ao domínio oficial da empresa.
 
-## Decisões Técnicas 
+---
 
-Os asserts são fundamentados no atributo href do primeiro snippet de resultado, por ser mais robusto. Como os snippets podem sofrer alterações dinâmicas pelo motor de busca, o teste valida apenas parte do texto do link ("Pacto") para evitar falsos negativos. Assim, o teste garante que o primeiro resultado é relevante e aponta para o site correto, sem depender de alterações na formatação do snippet.
+## Decisões Técnicas
 
+Diante desse cenário, as decisões de implementação priorizam clareza e rastreabilidade, reconhecendo que ambientes externos impõem limites naturais à resiliência dos testes. O teste foi estruturado para maximizar estabilidade e confiabilidade dentro das possibilidades do contexto, refletindo uma abordagem consciente dos trade-offs inerentes à automação sobre plataformas de terceiros.
+
+No contexto do Cypress, optou-se por asserts baseados em atributos e textos que tendem a ser mais estáveis, evitando dependência de títulos ou elementos sujeitos a mudanças frequentes. O objetivo é garantir que o teste seja útil como ferramenta de validação, sem gerar falsos negativos por alterações fora do controle do projeto.
 
 ---
 
